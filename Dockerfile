@@ -2,7 +2,7 @@ FROM amazoncorretto:17-alpine-jdk
 
 WORKDIR /app
 
-ADD target/spring-boot-monitoring-0.0.1-SNAPSHOT.jar /app.jar
+COPY target/spring-boot-monitoring-0.0.1-SNAPSHOT.jar /app.jar
 
 EXPOSE 8080
 
