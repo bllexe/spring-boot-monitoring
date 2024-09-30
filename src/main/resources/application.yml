@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-boot-monitoring
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  metrics:
+    tags:
+      application: ${spring.application.name}
+  endpoint:
+    prometheus:
+      enabled: true
